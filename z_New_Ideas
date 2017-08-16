@@ -1,0 +1,81 @@
+########################################
+#                 Цели                 #
+########################################
+
+1 - системую ин-фу заносить в базу данных
+(та ин-фа, которая печатается функцией log())
+
+2 - добавить возможность диалога без спец. символов
+(тогда, например, можно будет
+    вводить любое слово для поиска картинок)
+
+3 - добавить функции #документ, #стикер, #голос, #видео
+
+4 - доработать команду /action
+(не все знаю английский, можно вообще
+    заменить на какую-то другую фичу)
+
+...
+    > закинуть всё на сервер
+    > получить ssl-сертификат
+    > начать тестирование бета-версии
+
+##############################################################
+
+# token = 303721678:AAFIUoXE0uBDVGNVKS_Mwm0cLOyaEN_Drc8
+
+/start
+
+/newbot
+
+mr_Fox
+
+Smart_Fox_bot
+
+/setdescription
+	# add some text to description of bot
+
+/setuserpic
+	# add some picture to bot profile
+
+/setcommands
+	# create different commands for bot
+
+https://api.telegram.org/bot<token>/getupdates
+
+https://api.telegram.org/bot<token>/sendmessage?
+	chatid=<id of chat>&text=<some message>
+
+https://api.telegram.org/bot<token>/<method>
+
+<method>:
+
+	* getme
+		# получение информации о боте
+
+	* forwardmessage
+		# пересылка сообщений
+
+	* getupdates
+
+##############################################################
+
+# Создание виртуального окружения "Telegram_test"
+python3 -m venv Telegram_test
+
+# Просмотр содежимого
+cd Telegram_test
+ls
+
+# Интеграция виртуального окружения
+source bin/activate
+
+# Обновление pip3 (при необходимости)
+pip3 install --upgrade pip
+
+
+
+
+
+
+
